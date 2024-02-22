@@ -50,6 +50,9 @@ window.addEventListener("load", (event) => {
   console.log(jacques);
   jacques.Salaire = 1000; //refus de baisse de salaire
   paul.chef = jacques;
-
+  //Qui est le chef du chef
   console.log("Nom du chef du chef de Pierre : " + pierre.chef.chef.Nom);
+
+  Employe.prototype.sonChef = null;
+  pierre.sonChef = paul;
 });
